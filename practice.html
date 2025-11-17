@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eventify - Home</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Custom styles */
+    a:hover {
+      color: blue;
+    }
+
+    @media (max-width: 576px) {
+      .card {
+        width: 100% !important;
+      }
+    }
+
+    @keyframes hello {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    marquee:hover {
+      animation-play-state: paused;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand text-blue-600 fw-bold" href="#">Eventify</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        </ul>
+        <form class="d-flex me-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search events" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-danger" href="sign_in.html">Sign-In</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center py-5">
+    <h1 class="text-4xl font-bold text-gray-800">Welcome to Eventify</h1>
+    <p class="text-lg text-gray-600">Manage and discover events with ease</p>
+  </header>
+
+  <!-- Event Cards -->
+  <div class="container mb-5">
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm" style="width: 18rem;">
+          <img src="./Birthday_Event.jpg" class="card-img-top" alt="Birthday celebration image">
+          <div class="card-body text-center">
+            <h5 class="card-title">Birthday</h5>
+            <i class="bi bi-cake2-fill fs-4 text-warning"></i>
+            <a href="Birthday.html" class="btn btn-primary mt-2">About</a>
+          </div>
+        </div>
+      </div>
+      <!-- Add more cards here -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-3 shadow-sm">
+    <p class="mb-0 text-muted">&copy; 2025 Eventify. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

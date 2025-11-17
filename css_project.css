@@ -1,0 +1,25 @@
+     .scrool{
+                background-color: palevioletred;
+                padding: 20px;
+                border-radius: 70px;
+                text-align: center;
+                margin-top: 4px;
+            }
+            #submit-button{
+                padding-right: 100px;
+                padding-top:13px;
+                margin-top: 20px;
+            }
+            .border{
+                border-radius:9px;
+            }
+            .h1_heading{
+                text-align: center;
+                color:darkcyan
+            }
+            #eve-bud{
+                width:72px
+            }
+            #guests{
+                width:48px
+            }

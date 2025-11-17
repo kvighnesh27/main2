@@ -1,0 +1,109 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Webpage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: azure;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    summary {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      font-weight: bold;
+      color: #0d6efd;
+      cursor: pointer;
+      list-style: none; 
+    }
+
+    .event-card {
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+    }
+    .event-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .event-card img {
+      border-top-left-radius: .5rem;
+      border-top-right-radius: .5rem;
+    }
+      .hover-link {
+      color: #0d6efd;
+      transition: color 0.3s ease;
+    }
+    .hover-link:hover {
+      color: #000;
+    }
+    
+  </style>
+</head>
+<body style="background-image:">
+  <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand hover-link fw-bold" href="#">LVR</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+  <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+  <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+ </ul>
+ <ul class="navbar-nav ms-auto">
+   <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-search"></i></a></li>
+   <li class="nav-item"><a class="nav-link text-danger fw-semibold" href="sign_in.html">Sign-In</a></li>
+ </ul>
+ </div>
+  </div>
+</nav>
+  <details>
+    <summary>LVR Events!</summary>
+   <div class="container my-5">
+   <div class="row justify-content-center g-4 text-center">
+  <div class="col-md-3">
+ <div class="card event-card shadow-sm">
+ <img src="Birthday_Event.jpg" class="card-img-top" alt="Birthday Event" height="275px">
+   <div class="card-body">
+   <h5 class="card-title">Birthday</h5>
+  <a href="Birthday.html" class="btn btn-primary">View Details</a>
+   </div>
+  </div>
+  </div>
+  <div class="col-md-3">
+  <div class="card event-card shadow-sm">
+  <img src="./marriage_image.png" class="card-img-top" alt="Marriage Event" height="275px">
+  <div class="card-body">
+  <h5 class="card-title">Marriage</h5>
+  <a href="Marriage.html" class="btn btn-primary">View Details</a>
+  </div>
+  </div>
+  </div>
+  <div class="col-md-3">
+  <div class="card event-card shadow-sm">
+      <img src="./baby_shower_image.jpeg" class="card-img-top" alt="Baby Shower Event" height="275px">
+  <div class="card-body">
+      <h5 class="card-title">Baby Shower</h5>
+      <a href="BabyShower.html" class="btn btn-primary">View Details</a>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <center><footer style="background-color: #000; color: aliceblue;">
+  &copy; All Copyrights are reserved here
+ </footer></center>
+  </details>
+</body>
+</html>
